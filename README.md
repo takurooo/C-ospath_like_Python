@@ -3,7 +3,7 @@ Python os.path module in C
 - os.path.splitext  
 - os.path.dirname  
 - os.path.basename  
-- os.path.spli  
+- os.path.split  
 - os.path.join  
 
 
@@ -38,8 +38,6 @@ int main(void)
 
     os_path_join("abc/def/", "hoge.txt", base);
     printf("os_path_join     path     : %s\n", base);
-
-
 
     return 0;
 }

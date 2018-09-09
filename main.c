@@ -24,21 +24,24 @@ int main(void)
     printf("input path : %s\n", path);
 
     os_path_splitext(path, base, ext);
-    printf("base     : %s\n", base);
-    printf("ext      : %s\n", ext);
+    printf("os_path_splitext base     : %s\n", base);
+    printf("os_path_splitext ext      : %s\n", ext);
 
     os_path_dirname(path, dir);
-    printf("dir      : %s\n", dir);
+    printf("os_path_dirname  dir      : %s\n", dir);
 
     os_path_basename(path, fname);
-    printf("fname    : %s\n", fname);
+    printf("os_path_basename fname    : %s\n", fname);
 
     os_path_split(path, dir, fname);
-    printf("dir      : %s\n", dir);
-    printf("fname    : %s\n", fname);
+    printf("os_path_split    dir      : %s\n", dir);
+    printf("os_path_split    fname    : %s\n", fname);
 
     os_path_join("abc/def", "hoge.txt", base);
-    printf("path     : %s\n", base);
+    printf("os_path_join     path     : %s\n", base);
 
-    return 1;
+    os_path_join("abc/def/", "hoge.txt", base);
+    printf("os_path_join     path     : %s\n", base);
+
+    return 0;
 }

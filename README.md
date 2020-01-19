@@ -1,4 +1,4 @@
-# C-ospath_like_Python
+# c-ospath
 Python os.path module in C  
 - os.path.splitext  
 - os.path.dirname  
